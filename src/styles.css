@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+h1, h2, h3, h4, h5, h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+a, a:visited, a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+/* Responsive Styles (INVESTIGAR MAS)*/
+@media screen and (max-width: 767px) {
+  .card-container > *:not(.circle-link) {
+    width: 100%;
+  }
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+}/*# sourceMappingURL=styles.css.map */

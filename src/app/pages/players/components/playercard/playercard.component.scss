@@ -1,0 +1,84 @@
+.card {
+    // all: unset;
+    &.darktheme{
+        background-color: #232323;
+        border-top: 1px solid #43434395;
+        border-left: 1px solid #43434395;
+        border-right: 1px solid #43434395;
+    }
+
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 300px;
+    width: 180px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+    cursor: pointer;
+
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    }
+
+    .img-div{
+        width:165px;
+        height: 240px;
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        border-radius: 4px;
+        &.darktheme{
+            border: 1px solid #43434395;
+        }
+
+        border: 1px solid #eee;
+        
+    }
+
+    .last-team{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            padding-right: 7px;
+        }
+
+        img{
+            width:19px;
+        }
+
+    }
+
+}
+  
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.green{
+    border-bottom: 4px solid rgb(93, 229, 66, 0.5);
+    // box-shadow: 0 4px 17px rgba(104, 229, 58, 0.35);
+}
+
+.red{
+    border-bottom: 4px solid rgb(229, 66, 66, 0.5);
+    // box-shadow: 0 4px 17px rgba(104, 229, 58, 0.35);
+}
+
+.yellow{
+    border-bottom: 4px solid rgb(255, 219, 40, 0.5);
+    // box-shadow: 0 4px 17px rgba(104, 229, 58, 0.35);
+}

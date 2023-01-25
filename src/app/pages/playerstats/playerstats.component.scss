@@ -1,0 +1,11 @@
+.main{
+    width: 100%;
+    height:auto;
+    padding:60px 0 30px 0;
+
+    &.darktheme{
+        background-color: #232323;
+        color:white;
+        height:87.3vh;
+    }
+}

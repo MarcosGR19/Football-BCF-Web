@@ -1,0 +1,22 @@
+<div class="main" [ngClass]="{darktheme: isDark}">
+  <div class="content" role="main" [ngClass]="{darktheme: isDark}">
+    <div class="split" [ngClass]="{darktheme: isDark}"></div>
+    <h2 class="year">2022-2023</h2>
+    <app-playercard [players]="players2022"></app-playercard>
+    <div class="split" [ngClass]="{darktheme: isDark}"></div>
+    <h2 class="year">2021-2022</h2>
+    <app-playercard [players]="players2021"></app-playercard>
+    <div class="split" [ngClass]="{darktheme: isDark}"></div>
+    <h2 class="year">2020-2021</h2>
+    <app-playercard [players]="players2020"></app-playercard>
+    <div class="split" [ngClass]="{darktheme: isDark}"></div>
+    <h2 class="year">2019-2020</h2>
+    <app-playercard [players]="players2019"></app-playercard>
+    <div class="split" [ngClass]="{darktheme: isDark}"></div>
+    <h2 class="year">Jugadores Anteriores a Michu</h2>
+    <app-playercard [players]="playersPrev"></app-playercard>
+    <div class="split" [ngClass]="{darktheme: isDark}"></div>
+  </div>
+  <app-clouds></app-clouds>
+</div>
+

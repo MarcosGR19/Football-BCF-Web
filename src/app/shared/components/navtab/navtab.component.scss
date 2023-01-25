@@ -1,0 +1,62 @@
+.spacer {
+    flex: 1;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    background-color: black;
+    box-shadow:0 4px 17px rgba(0, 0, 0, 0.35);
+    color: white;
+    font-weight: 600;
+
+    .menu-option{
+        margin-left: 50px;
+        
+        a{
+            text-decoration:none;
+            color:white;
+        }
+    }
+
+    img{
+        margin: 0 16px;
+    }
+}
+
+#linkedIn-logo:hover, #github-logo:hover, .logo:hover {
+    opacity: 0.8;
+    transform: scale(1.04);
+}
+
+.menu-option:hover {
+    opacity: 0.8;
+}
+
+.theme-icon{
+    margin: 0 16px;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.split{
+    width:100%;
+    height: 10px;
+    // background-color: grey;
+    background-color:white;
+    margin:0;
+    position: absolute;
+    top: 60px;
+    box-shadow: 0 4px 17px rgba(14, 78, 20, 0.35);
+    // box-shadow: 0 4px 17px rgba(233, 30, 99, 0.35);
+    border-radius: 4px;
+}

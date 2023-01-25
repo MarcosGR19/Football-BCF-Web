@@ -1,0 +1,12 @@
+<div class="card-container">
+    <div class="card" *ngFor="let player of players" routerLink="/jugadores/{{player.id}}" 
+    [ngClass]="{green: player.remains===true, red: player.remains===false, yellow: player.remains===false && player.isPro===true, darktheme: isDark}">
+        <h3>{{player.name}}</h3>
+        <div class="img-div" id="{{player.name}}" style="background-image: url('{{player.img}}')" [ngClass]="{darktheme: isDark}"></div>
+        <div class="last-team">
+            <span>{{player.team.name}}</span>
+            <img src="{{player.team.img}}"/>
+        </div>
+        <p>{{player.signUp.date}}</p>
+    </div>
+</div>
