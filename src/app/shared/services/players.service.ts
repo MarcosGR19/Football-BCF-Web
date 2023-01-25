@@ -9,10 +9,10 @@ export class PlayersService {
   constructor(private http:HttpClient) { }
 
   getJugadores(){
-    return this.http.get("http://localhost:3000/players");
+    return this.http.get("https://bcf-backend.vercel.app/players");
   }
 
   getPlayer(id:number){
-    return this.http.get("http://localhost:3000/players/"+id);
+    return this.http.get("https://bcf-backend.vercel.app/players/"+id);
   }
 }
