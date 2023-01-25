@@ -1,6 +1,5 @@
 import { ThemeService } from './../../shared/services/theme.service';
 import { Player } from './../../shared/models/player.interface';
-import { ComicsService } from './../../../../../Ejercicios Sergio/7.proyectoComics/front/src/app/services/comics.service';
 import { ActivatedRoute } from '@angular/router';
 import { PlayersService } from './../../shared/services/players.service';
 import { Component, Input, OnInit } from '@angular/core';
